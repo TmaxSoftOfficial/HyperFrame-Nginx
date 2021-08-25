@@ -102,14 +102,15 @@
       ├── sbin
       │    └── nignx <------------------------ 기동 및 종료, 재기동을 위한 명령 파일
       └── logs
-   
-## 버전 체크
+## 명령어
+
+### 1) 버전 체크
 
       $ cd /home/username/nginx_server_1/sbin/
       $ ./nginx -v
       nginx version: nginx/1.20.1
     
-## 컴파일 옵션 체크
+### 2) 컴파일 옵션 체크
 
       $ cd /home/username/nginx_server_1/sbin/
       $ ./nginx -V
@@ -119,19 +120,19 @@
       TLS SNI support enabled
       configure arguments: --prefix=/home/parkminjun/nginx_server_1 --with-zlib=./zlib-1.2.11 --with-pcre=./pcre-8.45 --with-openssl=./openssl-1.1.1g --with-http_ssl_module --with-http_stub_status_module
 
-## 설정 파일 지정 Nginx 실행
+### 3) 설정 파일 지정 Nginx 실행
 
       $ cd /home/username/nginx_server_1/sbin/
       $ ./nginx -c [설정파일]                                 # 에러 내용 없을 시 정상 실행
    
    
-## 설정 파일 타당성 체크
+### 4) 설정 파일 타당성 체크
 
-### 1) 타당성 체크 후 에러 메세지만 출력 (nginx 정지 후 실행 가능)
+#### 타당성 체크 후 에러 메세지만 출력 (nginx 정지 후 실행 가능)
       $ cd /home/username/nginx_server_1/sbin/
       $ ./nginx -q                                           # 에러 내용 없을 시 출력되는 내용 없음
 
-### 2) 타당성 체크 후 정상, 에러 메세지 출력 (nginx 정지 후 실행 가능)
+#### 타당성 체크 후 정상, 에러 메세지 출력 (nginx 정지 후 실행 가능)
       $ cd /home/username/nginx_server_1/sbin/
       $ ./nginx -t
       nginx: the configuration file /home/parkminjun/nginx_server_1/conf/nginx.conf syntax is ok
