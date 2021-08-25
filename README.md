@@ -5,19 +5,19 @@
 
 ### Nginx
 * Version : nginx-1.20.1  
-* Install : http://nginx.org/download/nginx-1.20.1.tar.gz
+* Note : http://nginx.org/download/
    
 ### PCRE
 * Version : pcre-8.45
-* Install : https://ftp.pcre.org/pub/pcre/pcre-8.45.tar.gz
+* Note : https://ftp.pcre.org/pub/pcre/
 
 ### Zlib
 * Version : zlib-1.2.11
-* Install : https://www.zlib.net/zlib-1.2.11.tar.gz
+* Note : https://www.zlib.net/
 
 ### Openssl
 * Version : openssl-1.1.1g
-* Install : https://www.openssl.org/source/openssl-1.1.1g.tar.gz
+* Note : https://www.openssl.org/source/
 
 ## 설치 및 실행
 
