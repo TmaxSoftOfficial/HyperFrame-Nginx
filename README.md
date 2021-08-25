@@ -189,6 +189,7 @@
       </server>
  
 ### 4) nginx 실행
+
       $ ./nginx
 
 ### 5) nginx 접속
