@@ -13,7 +13,7 @@
 
 ## 검증 환경
 
-* CentOS Linux release 7.9.2009 (Core)에서 테스트 
+* CentOS Linux release 7.9.2009 (Core)
 
 ## 설치 및 실행
 
