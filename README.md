@@ -24,28 +24,13 @@
 ### 2) 디렉토리 구조 확인
 
     # nginx
+    ├── client_body_temp
     ├── conf
-    │    ├── fastcgi.conf 
-    │    ├── fastcgi.conf.default
-    │    ├── fastcgi_params
-    │    ├── fastcgi_params.default
-    │    ├── koi-utf
-    │    ├── koi-win
-    │    ├── mime.types
-    │    ├── mime.types.default
-    │    ├── nginx.conf 
-    │    ├── nginx.conf.default
-    │    ├── scgi_params
-    │    ├── scgi_params.default
-    │    ├── uwsgi_params
-    │    ├── uwsgi_params.default
-    │    └── win-utf
+    ├── fastcgi_temp
     ├── html
-    │    ├── 50x.html
-    │    └── index.html
-    ├── sbin
-    │    └── nignx
-    └── logs
+    ├── logs
+    ├── proxy_temp
+    └── uwsgi_temp
     
 ### 3) PCRE 설치
 
