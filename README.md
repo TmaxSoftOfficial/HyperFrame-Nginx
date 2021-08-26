@@ -37,7 +37,9 @@
 ### 4) Nginx 실행
 
     $ cd ${NGINX_HOME}/sbin/
-    $ ./nginx
+    $ ./nginx -p ${NGINX_HOME}
+    
+    # 
 
 ### 5) Nginx 종료
 
