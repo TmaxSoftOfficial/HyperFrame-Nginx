@@ -21,46 +21,11 @@
 
     $ tar -zxf nginx-1.20.1.tar.gz
 
-### 2) PCRE 설치
-
-    $ cd ${NGINX_HOME}
-    $ tar -zxf pcre-8.45.tar.gz
-    $ cd ${NGINX_HOME}/pcre-8.45/
-    $ ./configure --prefix=${PCRE_HOME}
-    $ make && make install
-
-### 3) Nginx 컴파일 설치
-
-    $ cd ${NGINX_HOME}
-    $ ./configure --prefix=${NGINX_HOME} --with-pcre=${PCRE_HOME} --with-http_ssl_module --with-http_stub_status_module make install
-
-### 4) Nginx 실행
-
-    # binaries에 등록된 nginx.tar.gz 바이너리의 ${NGINX_HOME}의 기본값은 /home/nginx/.
-    # 기본값이 아닌 다른 경로에서 기동 시 옵션 -p을 사용하여, 실제 Nginx Home 경로로 기동.
-    
-    $ cd ${NGINX_HOME}/sbin/
-    $ ./nginx -p ${NGINX_HOME}
-    
-### 5) Nginx 종료
-
-* 강제 종료
-
-      $ ./nginx -s stop      
-
-* Request 처리 후 종료
-      
-      $ ./nginx -s quit      
-
-### 6) Nginx 재기동
-
-    $ ./nginx -s reload
-
-## 디렉토리 구조
+### 2) 디렉토리 구조 확인
 
     # nginx
     ├── conf
-    │    ├── fastcgi.conf <----------------------- FastCGI 환경설정 파일
+    │    ├── fastcgi.conf 
     │    ├── fastcgi.conf.default
     │    ├── fastcgi_params
     │    ├── fastcgi_params.default
@@ -68,7 +33,7 @@
     │    ├── koi-win
     │    ├── mime.types
     │    ├── mime.types.default
-    │    ├── nginx.conf <------------------------ 프로세스 개수, 접속사 수 등 Nginx 퍼포먼스 설정 파일
+    │    ├── nginx.conf 
     │    ├── nginx.conf.default
     │    ├── scgi_params
     │    ├── scgi_params.default
@@ -79,9 +44,45 @@
     │    ├── 50x.html
     │    └── index.html
     ├── sbin
-    │    └── nignx <------------------------ 기동 및 종료, 재기동을 위한 명령 파일
+    │    └── nignx
     └── logs
+    
+### 3) PCRE 설치
+
+    $ cd ${NGINX_HOME}
+    $ tar -zxf pcre-8.45.tar.gz
+    $ cd ${NGINX_HOME}/pcre-8.45/
+    $ ./configure --prefix=${PCRE_HOME}
+    $ make && make install
+
+### 4) Nginx 컴파일 설치
+
+    $ cd ${NGINX_HOME}
+    $ ./configure --prefix=${NGINX_HOME} --with-pcre=${PCRE_HOME} --with-http_ssl_module --with-http_stub_status_module 
+    $ make && make install
+
+### 5) Nginx 실행
+
+    # binaries에 등록된 nginx.tar.gz 바이너리의 ${NGINX_HOME}의 기본값은 /home/nginx/.
+    # 기본값이 아닌 다른 경로에서 기동 시 옵션 -p을 사용하여, 실제 Nginx Home 경로로 기동.
+    
+    $ cd ${NGINX_HOME}/sbin/
+    $ ./nginx -p ${NGINX_HOME}
+    
+### 6) Nginx 종료
+
+* 강제 종료
+
+      $ ./nginx -s stop      
+
+* Request 처리 후 종료
       
+      $ ./nginx -s quit      
+
+### 7) Nginx 재기동
+
+    $ ./nginx -s reload
+    
 ## 버전 확인
 
     $ cd ${NGINX_HOME}/sbin/
