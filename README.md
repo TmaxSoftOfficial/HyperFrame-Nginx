@@ -174,7 +174,7 @@
 
 ### 2) 설정 파일 지정 Nginx 실행
 
-    $ cd /home/username/nginx_server_1/sbin/
+    $ cd ${NGINX_HOME}/sbin/
     $ ./nginx -c [설정파일]                              
    
    
@@ -182,12 +182,17 @@
 
 * 타당성 체크 후 에러 메세지만 출력 (nginx 정지 후 실행 가능)
 
-      $ cd /home/username/nginx_server_1/sbin/
+      $ cd ${NGINX_HOME}/sbin/
       $ ./nginx -q                                           
 
 * 타당성 체크 후 정상, 에러 메세지 출력 (nginx 정지 후 실행 가능)
 
-      $ cd /home/username/nginx_server_1/sbin/
+      $ cd ${NGINX_HOME}/sbin/
       $ ./nginx -t
-      nginx: the configuration file /home/parkminjun/nginx_server_1/conf/nginx.conf syntax is ok
-      nginx: configuration file /home/parkminjun/nginx_server_1/conf/nginx.conf test is successful
+      nginx: the configuration file ${NGINX_HOME}/conf/nginx.conf syntax is ok
+      nginx: configuration file ${NGINX_HOME}/conf/nginx.conf test is successful
+
+## 검증 내역
+
+    HyperFrameOE-Nginx 1.20.1
+    첨부한 nginx-1.20.1.tar.gz / pcre-8.45.tar.gz 는 CentOS Linux release 7.9.2009 (Core)에서 테스트 
