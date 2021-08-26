@@ -11,6 +11,10 @@
 * Version : pcre-8.45
 * Note : https://ftp.pcre.org/pub/pcre/
 
+## 검증 환경
+
+* CentOS Linux release 7.9.2009 (Core)에서 테스트 
+
 ## 설치 및 실행
 
 ### 1) Nginx 압축 풀기
@@ -192,7 +196,3 @@
       nginx: the configuration file ${NGINX_HOME}/conf/nginx.conf syntax is ok
       nginx: configuration file ${NGINX_HOME}/conf/nginx.conf test is successful
 
-## 검증 내역
-
-    HyperFrameOE-Nginx 1.20.1
-    첨부한 nginx-1.20.1.tar.gz / pcre-8.45.tar.gz 는 CentOS Linux release 7.9.2009 (Core)에서 테스트 
