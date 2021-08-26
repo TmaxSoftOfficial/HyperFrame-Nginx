@@ -58,7 +58,7 @@
 
 ## 디렉토리 구조
 
-    # nginx_server_1
+    # nginx
     ├── conf
     │    ├── fastcgi.conf <----------------------- FastCGI 환경설정 파일
     │    ├── fastcgi.conf.default
@@ -84,7 +84,7 @@
       
 ## 버전 확인
 
-    $ cd /home/username/nginx_server_1/sbin/
+    $ cd ${NGINX_HOME}/sbin/
     $ ./nginx -v
     nginx version: nginx/1.20.1
 
@@ -177,7 +177,7 @@
     built by gcc 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC)
     built with OpenSSL 1.1.1g  21 Apr 2020
     TLS SNI support enabled
-    configure arguments: --prefix=${NGINX_HOME} --with-pcre=./pcre-8.45 --with-http_ssl_module --with-http_stub_status_module
+    configure arguments: --prefix=${NGINX_HOME} --with-pcre=./pcre-8.45 --with-http_stub_status_module
 
 ### 2) 설정 파일 지정 Nginx 실행
 
