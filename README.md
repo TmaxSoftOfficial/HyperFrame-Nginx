@@ -14,6 +14,7 @@
 ## 검증 환경
 
 * CentOS Linux release 7.9.2009 (Core)
+* CentOS Linux release 8.4.2105
 
 ## 설치 및 실행
 
