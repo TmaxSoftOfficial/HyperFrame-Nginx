@@ -1,6 +1,6 @@
 ## 빌드 환경
 
-- CentOS Linux release 7.9.2009 (Core)
+- CentOS Linux release 7.7.1908
 
 ## 빌드 파일
 
