@@ -186,4 +186,4 @@
       $ ./nginx -t
       nginx: the configuration file ${NGINX_HOME}/conf/nginx.conf syntax is ok
       nginx: configuration file ${NGINX_HOME}/conf/nginx.conf test is successful
-
+ 
