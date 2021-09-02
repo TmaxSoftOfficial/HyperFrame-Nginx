@@ -11,6 +11,14 @@
 * Version : pcre-8.45
 * Note : https://ftp.pcre.org/pub/pcre/
 
+### OpenSSL
+* Version : openssl-1.1.1k
+* Note : https://www.openssl.org/source/
+
+### Zlib
+* Version :zlib-1.2.11
+* Note : https://zlib.net/
+
 ## 검증 환경
 
 * CentOS Linux release 7.9.2009
