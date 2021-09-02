@@ -29,6 +29,7 @@
 
 ### 1) Nginx 압축 풀기
 
+    $ cd ${INSTALL_HOME}
     $ tar -zxf nginx-1.20.1.tar.gz
 
 ### 2) 디렉토리 구조 확인
@@ -42,21 +43,30 @@
     ├── proxy_temp
     └── uwsgi_temp
     
-### 3) PCRE 설치
+### 3) PCRE 압축 풀기
 
-    $ cd ${NGINX_HOME}
+    $ cd ${INSTALL_HOME}
     $ tar -zxf pcre-8.45.tar.gz
-    $ cd ${NGINX_HOME}/pcre-8.45/
-    $ ./configure --prefix=${PCRE_HOME}
-    $ make && make install
+    
+    
+### 4) zlib 압축 풀기
 
-### 4) Nginx 컴파일 설치
+    $ cd ${INSTALL_HOME}
+    $ tar -zxf zlib-1.2.11.tar.gz
+    
+### 5) OpenSSL 압축 풀기
+
+    $ cd ${INSTALL_HOME}
+    $ tar -zxf openssl-1.1.1k.tar.gz
+
+### 6) Nginx 컴파일 설치
 
     $ cd ${NGINX_HOME}
-    $ ./configure --prefix=${NGINX_HOME} --with-pcre=${PCRE_HOME} --with-http_ssl_module --with-http_stub_status_module 
+    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${ZLIB_HOME} --with-pcre=${PCRE_HOME} --with-openssl=${OPENSSL_HOME} --with-http_ssl_module --with-http_stub_status_module
+
     $ make && make install
 
-### 5) Nginx 실행
+### 7) Nginx 실행
 
     # binaries에 등록된 nginx.tar.gz 바이너리의 ${NGINX_HOME}의 기본값은 /home/nginx/.
     # 기본값이 아닌 다른 경로에서 기동 시 옵션 -p을 사용하여, 실제 Nginx Home 경로로 기동.
@@ -64,7 +74,7 @@
     $ cd ${NGINX_HOME}/sbin/
     $ ./nginx -p ${NGINX_HOME}
     
-### 6) Nginx 종료
+### 8) Nginx 종료
 
 * 강제 종료
 
@@ -74,7 +84,7 @@
       
       $ ./nginx -s quit      
 
-### 7) Nginx 재기동
+### 9) Nginx 재기동
 
     $ ./nginx -s reload
     
