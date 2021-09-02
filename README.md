@@ -31,8 +31,29 @@
 
     $ cd ${INSTALL_HOME}
     $ tar -zxf nginx-1.20.1.tar.gz
+    
+### 2) PCRE 압축 풀기
 
-### 2) 디렉토리 구조 확인
+    $ cd ${INSTALL_HOME}
+    $ tar -zxf pcre-8.45.tar.gz
+    
+### 3) zlib 압축 풀기
+
+    $ cd ${INSTALL_HOME}
+    $ tar -zxf zlib-1.2.11.tar.gz
+    
+### 4) OpenSSL 압축 풀기
+
+    $ cd ${INSTALL_HOME}
+    $ tar -zxf openssl-1.1.1k.tar.gz
+
+### 5) Nginx 컴파일 설치
+
+    $ cd ${NGINX_HOME}
+    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${ZLIB_HOME} --with-pcre=${PCRE_HOME} --with-openssl=${OPENSSL_HOME} --with-http_ssl_module --with-http_stub_status_module
+    $ make && make install
+   
+### 디렉토리 구조 확인
 
     # nginx
     ├── client_body_temp
@@ -42,28 +63,6 @@
     ├── logs
     ├── proxy_temp
     └── uwsgi_temp
-    
-### 3) PCRE 압축 풀기
-
-    $ cd ${INSTALL_HOME}
-    $ tar -zxf pcre-8.45.tar.gz
-    
-    
-### 4) zlib 압축 풀기
-
-    $ cd ${INSTALL_HOME}
-    $ tar -zxf zlib-1.2.11.tar.gz
-    
-### 5) OpenSSL 압축 풀기
-
-    $ cd ${INSTALL_HOME}
-    $ tar -zxf openssl-1.1.1k.tar.gz
-
-### 6) Nginx 컴파일 설치
-
-    $ cd ${NGINX_HOME}
-    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${ZLIB_HOME} --with-pcre=${PCRE_HOME} --with-openssl=${OPENSSL_HOME} --with-http_ssl_module --with-http_stub_status_module
-    $ make && make install
 
 ### 7) Nginx 실행
 
