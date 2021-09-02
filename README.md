@@ -61,8 +61,11 @@
     ├── fastcgi_temp
     ├── html
     ├── logs
+    ├── sbin
+    ├── scgi_temp
     ├── proxy_temp
     └── uwsgi_temp
+    
 
 ### Nginx 실행
 
