@@ -64,7 +64,7 @@
     ├── proxy_temp
     └── uwsgi_temp
 
-### 7) Nginx 실행
+### Nginx 실행
 
     # binaries에 등록된 nginx.tar.gz 바이너리의 ${NGINX_HOME}의 기본값은 /home/nginx/.
     # 기본값이 아닌 다른 경로에서 기동 시 옵션 -p을 사용하여, 실제 Nginx Home 경로로 기동.
@@ -72,7 +72,7 @@
     $ cd ${NGINX_HOME}/sbin/
     $ ./nginx -p ${NGINX_HOME}
     
-### 8) Nginx 종료
+### Nginx 종료
 
 * 강제 종료
 
@@ -82,7 +82,7 @@
       
       $ ./nginx -s quit      
 
-### 9) Nginx 재기동
+### Nginx 재기동
 
     $ ./nginx -s reload
     
