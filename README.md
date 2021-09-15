@@ -49,8 +49,8 @@
 
 ### 5) Nginx 컴파일 설치
 
-    $ cd ${NGINX_HOME}
-    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${ZLIB_HOME} --with-pcre=${PCRE_HOME} --with-openssl=${OPENSSL_HOME} --with-http_ssl_module --with-http_stub_status_module
+    $ cd ${INSTALL_HOME}/nginx-1.20.1
+    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${INSTALL_HOME}/zlib-1.2.11 --with-pcre=${INSTALL_HOME}/pcre-8.45 --with-openssl=${INSTALL_HOME}/openssl-1.1.1k --with-http_ssl_module --with-http_stub_status_module
     $ make && make install
    
 ### 디렉토리 구조 확인
