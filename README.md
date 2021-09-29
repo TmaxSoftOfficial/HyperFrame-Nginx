@@ -36,16 +36,22 @@
 
     $ cd ${INSTALL_HOME}
     $ tar -zxf pcre-8.45.tar.gz
+    $ cd ${PCRE_HOME}
+    $ ./configure --prefix=${PCRE_HOME}
     
 ### 3) zlib 압축 풀기
 
     $ cd ${INSTALL_HOME}
     $ tar -zxf zlib-1.2.11.tar.gz
+    $ cd {ZLIB_HOME}
+    $ ./configure --prefix=${ZLIB_HOME}
     
 ### 4) OpenSSL 압축 풀기
 
     $ cd ${INSTALL_HOME}
     $ tar -zxf openssl-1.1.1k.tar.gz
+    $ cd ${OPENSSL_HOME}
+    $ ./config --prefix=${OPENSSL_HOME}
 
 ### 5) Nginx 컴파일 설치
 
