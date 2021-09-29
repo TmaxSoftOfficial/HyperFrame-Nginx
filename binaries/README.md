@@ -34,6 +34,8 @@
      drwxrwxr-x 6 hfnginx hfnginx 56  9월 29 11:21 pcre
      drwxrwxr-x 5 hfnginx hfnginx 45  9월 29 11:23 zlib
     
+### 빌드 파일 실행
+등록된 빌드 파일을 실행 시 최초 빌드된 Path가 고정, 아래와 같이 실행
 
-
+    $ ./nginx -p ${NGINX_HOME}
 
