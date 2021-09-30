@@ -1,6 +1,7 @@
 ### 빌드 환경
 
 - CentOS Linux release 7.7.1908
+- Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz x86_64 bit
 
 ### 파일 등록 내역
 등록된 nginx_1.20_build.tar.gz는 아래의 라이브러리들이 컴파일된 빌드가 포함된 바이너리 파일
