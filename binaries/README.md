@@ -35,8 +35,9 @@
      drwxrwxr-x 6 hfnginx hfnginx 56  9월 29 11:21 pcre
      drwxrwxr-x 5 hfnginx hfnginx 45  9월 29 11:23 zlib
     
-### 빌드 파일 실행
-등록된 빌드 파일을 실행 시 최초 빌드된 Path가 /home/hfnginx/nginx1.20로 fix되어 있으며, 아래와 같이 실행
+### 빌드 바이너리 실행
+등록된 빌드 바이너리는 /home/hfnginx/nginx1.20로 path로 빌드 
+임의의 경로에서 설치시 -p 옵션을 사용
 
     $ ./nginx -p ${NGINX_HOME}
 
