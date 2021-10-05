@@ -39,5 +39,3 @@
 등록된 빌드 바이너리는 /home/hfnginx/nginx1.20로 path로 빌드 
 임의의 경로에서 설치시 -p 옵션을 사용
 
-    $ ./nginx -p ${NGINX_HOME}
-
