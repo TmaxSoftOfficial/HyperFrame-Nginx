@@ -22,7 +22,7 @@
      drwxrwxr-x  7 hfnginx hfnginx   65  9월 29 11:29 ..
      drwxrwxr-x  5 hfnginx hfnginx   45  9월 29 11:23 build
      drwxr-xr-x  9 hfnginx hfnginx  186  9월 29 11:27 nginx-1.20.1
-     drwxrwxr-x 20 hfnginx hfnginx 4096  9월 29 11:29 openssl-1.1.1k
+     drwxrwxr-x 20 hfnginx hfnginx 4096  9월 29 11:29 openssl-1.1.1l
      drwxr-xr-x  9 hfnginx hfnginx 8192  9월 29 11:29 pcre-8.45
      drwxr-xr-x 14 hfnginx hfnginx 4096  9월 29 11:29 zlib-1.2.11
      
