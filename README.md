@@ -51,7 +51,7 @@
 ### 4) OpenSSL 압축 풀기
 
     $ cd ${INSTALL_HOME}
-    $ tar -zxf openssl-1.1.1k.tar.gz
+    $ tar -zxf openssl-1.1.1l.tar.gz
     $ cd ${OPENSSL_HOME}
     $ ./config --prefix=${OPENSSL_HOME}
     $ make & make install
@@ -59,7 +59,7 @@
 ### 5) Nginx 컴파일 설치
 
     $ cd ${INSTALL_HOME}/nginx-1.20.1
-    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${INSTALL_HOME}/zlib-1.2.11 --with-pcre=${INSTALL_HOME}/pcre-8.45 --with-openssl=${INSTALL_HOME}/openssl-1.1.1k --with-http_ssl_module --with-http_v2_module --with-http_stub_status_module
+    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${INSTALL_HOME}/zlib-1.2.11 --with-pcre=${INSTALL_HOME}/pcre-8.45 --with-openssl=${INSTALL_HOME}/openssl-1.1.1l--with-http_ssl_module --with-http_v2_module --with-http_stub_status_module
     $ make && make install
    
 ### 디렉토리 구조 확인
