@@ -12,7 +12,7 @@
 * Note : https://ftp.pcre.org/pub/pcre/
 
 ### OpenSSL
-* Version : openssl-1.1.1k
+* Version : openssl-1.1.1l
 * Note : https://www.openssl.org/source/
 
 ### Zlib
