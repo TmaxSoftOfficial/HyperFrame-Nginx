@@ -6,7 +6,7 @@
 ### 파일 등록 내역
 등록된 nginx_1.20_build.tar.gz는 아래의 라이브러리들이 컴파일된 빌드가 포함된 바이너리 파일
 
-- openssl-1.1.1k
+- openssl-1.1.1l
 - pcre-8.45
 - zlib-1.2.11
 
