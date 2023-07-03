@@ -65,7 +65,7 @@
 ### 5) Nginx 컴파일 설치
 
     $ cd ${INSTALL_HOME}/nginx-1.20.1
-    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${INSTALL_HOME}/zlib-1.2.11 --with-pcre=${INSTALL_HOME}/pcre-8.45 --with-openssl=${INSTALL_HOME}/openssl-1.1.1l--with-http_ssl_module --with-http_v2_module --with-http_stub_status_module
+    $ ./configure --prefix=${NEW_INSTALL_NGINX_HOME} --with-zlib=${INSTALL_HOME}/zlib-1.2.11 --with-pcre=${INSTALL_HOME}/pcre-8.45 --with-openssl=${INSTALL_HOME}/openssl-1.1.1l--with-http_ssl_module --with-http_v2_module --with-http_stub_status_module --with-compat --with-file-aio
     $ make && make install
 
 ### 디렉토리 구조 확인
@@ -96,7 +96,7 @@
       $ ./nginx -s stop
 
 - Request 처리 후 종료
-      $ ./nginx -s quit
+  $ ./nginx -s quit
 
 ### Nginx 재기동
 
@@ -150,7 +150,6 @@
           ...
       }
 
-
 - Error Log 끄기
 
       $ vi ${NGINX_HOME}/conf/nginx.conf
@@ -170,20 +169,20 @@
 ### 2) 환경 설정
 
 - Port 변경
-      ...
-      http {
-          ...
-          server {
-              listen    8080;
-              ...
-          }
-      }
+  ...
+  http {
+  ...
+  server {
+  listen 8080;
+  ...
+  }
+  }
 - Header Nginx 버전 숨김
-      ...
-      http {
-          ...
-          server tokens    off;
-      }
+  ...
+  http {
+  ...
+  server tokens off;
+  }
 
 ## Nginx 명령
 
